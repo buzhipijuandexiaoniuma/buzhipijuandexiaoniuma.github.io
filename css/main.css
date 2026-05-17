@@ -1505,7 +1505,7 @@ pre code {
     transition: all 0.2s ease-in-out;
   }
   .links-of-author a::before {
-    background: #391346;
+    background: #01ffa1;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3183,23 +3183,39 @@ body {
   position: relative;
 }
 .main-inner {
-  background: rgba(255,255,255,0.88);
+  background: rgba(255,255,255,0.6);
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .header-inner {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.6);
   border-radius: 8px 8px 0 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .sidebar-inner {
-  background: rgba(255,255,255,0.88);
+  background: rgba(255,255,255,0.6);
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .footer-inner {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.55);
   border-radius: 8px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.posts-expand .post-body,
+.posts-expand .post-title,
+.posts-expand .post-meta,
+.sidebar-inner,
+.header-inner,
+.footer-inner {
+  text-shadow: 0 1px 3px rgba(255,255,255,0.5);
 }
 .post-block {
   padding: 25px 30px;
@@ -3238,16 +3254,32 @@ body {
     background-image: url("/images/bg.jpg");
   }
   .main-inner {
-    background: rgba(30,30,30,0.92);
+    background: rgba(20,20,30,0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
   .header-inner {
-    background: rgba(30,30,30,0.93);
+    background: rgba(20,20,30,0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
   .sidebar-inner {
-    background: rgba(30,30,30,0.92);
+    background: rgba(20,20,30,0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
   .footer-inner {
-    background: rgba(30,30,30,0.9);
+    background: rgba(20,20,30,0.68);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .posts-expand .post-body,
+  .posts-expand .post-title,
+  .posts-expand .post-meta,
+  .sidebar-inner,
+  .header-inner,
+  .footer-inner {
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
   }
   .post-block {
     box-shadow: 0 1px 8px rgba(0,0,0,0.2);
